@@ -267,7 +267,7 @@ static  const  float fsl_HALF_PI = 0.5f * fsl_PI;
 // Reference : Handbook of Mathematical Functions (chapter : Elementary Transcendental Functions), M. Abramowitz and I.A. Stegun, Ed.
 float acosFast4(float inX)
 {
-	float x1 = inX;
+	float x1 = abs(inX);
 	float x2 = x1 * x1;
 	float x3 = x2 * x1;
 	float s;
@@ -278,7 +278,8 @@ float acosFast4(float inX)
 	s = sqrt(1.0f - x1) * s;
 
 	// acos function mirroring
-	return x1 > 0.0f ? s : -s;
+	// check per platform if compiles to a selector - no branch neeeded
+	return x1 >= 0.0f ? s : fsl_PI - s;
 }
 
 // 4th order polynomial approximation
