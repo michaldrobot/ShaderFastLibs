@@ -6,7 +6,9 @@ Optimized for AMD GCN architecture. Should also be beneficial on all other archi
 Include a lib *.h shader file in your .hlsl or PC (C, CPP) code.
 PC requires #define _PC
 Available libs:
-ShaderFastMath.h - contains fast approximations for basic transcendental functions
+>ShaderFastMath.h 
+  Contains fast approximations for basic transcendental functions.
+  Newton Raphson methods provided for reference purpose (some code / architectures might still benefit from single NR).
 
 [Info]
 Presented initially as part of:
