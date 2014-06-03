@@ -1,13 +1,19 @@
-Fast Shader Libs
-
+[Shader Fast Libs]
 Shader libraries for fast shader opetations.
 Optimized for AMD GCN architecture. Should also be beneficial on all other architectures (to certain degree).
 
-Part of:
+[Usage]
+Include a lib *.h shader file in your .hlsl or PC (C, CPP) code.
+PC requires #define _PC
+Available libs:
+ShaderFastMath.h - contains fast approximations for basic transcendental functions
+
+[Info]
+Presented initially as part of:
 Low Level Optimizations for AMD GCN - presented @Digital Dragons 2014
 published : http://michaldrobot.com/publications/
 
-Authors:
+[Authors]
 Michal Drobot
 hello@drobot.org
 michaldrobot.com
