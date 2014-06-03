@@ -10,6 +10,7 @@
             Copyright (c) Ubisoft Montreal
 
     v0.3    added Newton Raphson 1 and 2 iterations
+            Newton Raphson methods provided for reference purpose (some code / architectures might still benefit from single NR).
 
     v0.2    fast IEEE float math sqrt() rsqrt() rcp()
 
@@ -294,7 +295,7 @@ float asinFast4(float inX)
 // 4th order hyperbolical approximation
 // 4 VGRP, 12 ALU Full Rate
 // 7 * 10^-5 radians precision 
-// Comes from : “Efficient approximations for the arctangent function”, Rajan, S. Sichun Wang Inkol, R. Joyal, A., May 2006
+// Comes from : ï¿½Efficient approximations for the arctangent functionï¿½, Rajan, S. Sichun Wang Inkol, R. Joyal, A., May 2006
 float atanFast4(float inX)
 {
 	float  x = inX;
