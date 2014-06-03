@@ -6,8 +6,7 @@
 
     Release notes:
     v0.4    new constants calculated for new ranges, minor optimization and precision improvements
-            Developed during production of : Far Cry 4,
-            Copyright (c) Ubisoft Montreal
+            Developed during production of : Far Cry 4, Ubisoft Montreal
 
     v0.3    added Newton Raphson 1 and 2 iterations
             Newton Raphson methods provided for reference purpose (some code / architectures might still benefit from single NR).
@@ -15,8 +14,9 @@
     v0.2    fast IEEE float math sqrt() rsqrt() rcp()
 
     v0.1    4th order polynomial approximations for atan() asin() acos()
-            Developed during production of : Killzone : Shadow Fall, 
-            Copyright (c) Guerrilla Games, SCEE
+            Developed during production of : Killzone : Shadow Fall, Guerrilla Games, SCEE
+
+    Ubisoft and Guerrilla Games granted permission for open source distribution.
 
     Contact information:
     Michal Drobot - @MichalDrobot
